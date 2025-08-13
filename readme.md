@@ -1,0 +1,1 @@
+This is a very basic Chinese text tokenizer app.
