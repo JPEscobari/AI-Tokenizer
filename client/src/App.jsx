@@ -7,6 +7,11 @@ function App() {
   const [input, setInput] = useState("")
   const [tokens, setTokens] = useState([])
 
+function handleClear() {
+  setInput("")
+  setTokens([])
+}
+
  async function handleTokenize() {
     // We will use the OpenAI API to tokenize the input text.
     // Send a POST request to http://localhost:5656/tokenize
@@ -34,6 +39,9 @@ function App() {
       />
       <button onClick={handleTokenize}>
         Tokenize
+      </button>
+      <button onClick={handleClear}>
+        Clear
       </button>
     
       <div>
