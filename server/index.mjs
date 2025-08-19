@@ -15,7 +15,7 @@ app.get('/', (req, res) => {
 app.post('/tokenize', async (req, res) => {
     const url = 'https://api.openai.com/v1/chat/completions';
     const { text } = req.body;
-    const instruction = 'You are a strict Chinese word segmentation tool. Only segment and return Chinese text. If the input is not Chinese, respond with: "ERROR: Input is not Chinese."';
+    const instruction = 'Your job is to process a text and segment it into words. Detect the language first and return the segmented words.';
 
     if (!text) {
         return res.status(400).json({ error: 'No Text Provided' });
@@ -38,7 +38,10 @@ app.post('/tokenize', async (req, res) => {
             }),
         });
         const data = await response.json();
+        // Log the message
+        console.log('Message:', data.choices[0].message);
         const segmented = data.choices[0].message.content.trim();
+        console.log('Segmented Text:', segmented);
         res.json({ segmented });
     } catch (error) {
         res.status(500).json({ error: 'Failed to segment text' });
