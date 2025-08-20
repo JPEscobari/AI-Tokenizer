@@ -19,15 +19,15 @@ function handleClear() {
         headers: {'Content-Type': 'application/json',},
         body: JSON.stringify({ text: input }),
       })
-      const data = await response.json()
-      console.log('Full data:', data);
-      console.log('Detected Language:', data.text_details.detectedLanguage);
+      const { text_details } = await response.json()
+      console.log('Full data:', text_details);
+      console.log('Detected Language:', text_details.detectedLanguage);
       
-      setTokens(data.text_details.tokenizedText);
+      setTokens(text_details.tokenizedText);
       
       // Log Tokenized Words:
       console.log('These are your individual tokens:');
-      data.text_details.tokenizedText.forEach(token => {
+      text_details.tokenizedText.forEach(token => {
         if (token.word) {
           console.log(token.word);
         }
@@ -47,10 +47,14 @@ function handleClear() {
       rows={8}
       className='text-area'
       />
-      <button onClick={handleTokenize}>
+      <button 
+      className='buttons'
+      onClick={handleTokenize}>
         Tokenize
       </button>
-      <button onClick={handleClear}>
+      <button 
+      className='buttons'
+      onClick={handleClear}>
         Clear
       </button>
       <div>

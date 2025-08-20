@@ -9,6 +9,10 @@
   width: 100%
 }
 
+.buttons{
+  margin: 2vmin;
+}
+
 .token {
   display: inline-block;
   margin: 2vmin 4px 4px 2vmin;
