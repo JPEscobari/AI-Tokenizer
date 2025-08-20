@@ -7,7 +7,7 @@ Your job is to process a non-English language text into individual words for a l
 You will receive a text that is written in 1 or more non-English languages. First, identify the input text's language.
 
 # 3. Output
-Go word by word and create an array of word objects in the following structure: 
+Go word by word and respond ONLY with a JSON array of objects in the following structure: 
 
 ```
 [
@@ -24,7 +24,8 @@ Go word by word and create an array of word objects in the following structure:
 
 # 4. Ambiguity:
 - If you're unsure how to parse a word, use the context on the text to make an informed decision.
-- If a text is written in two or more languages, determine the most used language and return the information in the "detected_language" property.
+- If a text is written in two or more languages, determine the most used language. Return this value in the "detected_language" property.
+- If the text is made of only numbers, symbols, an unkwnown language or the text is incompatible with the task, return [{detected_language: "Unable to determine"}].
 
 # 5. Strict Rules
 Follow these strict rules:

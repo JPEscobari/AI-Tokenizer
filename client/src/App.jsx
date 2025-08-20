@@ -22,7 +22,16 @@ function handleClear() {
         body: JSON.stringify({ text: input }),
       })
       const data = await response.json()
-      setTokens(data.segmented.split(' '));
+      console.log('Full segmented array:', data.segmented);
+      setTokens(data.segmented);
+
+      // Log each word in the console
+      console.log('These are your tokens:');
+      data.segmented.forEach(obj => {
+        if (obj.word) {
+          console.log(obj.word);
+        }
+      });
     } catch (error) {
       console.error('Error:', error)
     }
@@ -43,13 +52,20 @@ function handleClear() {
       <button onClick={handleClear}>
         Clear
       </button>
+      <div>
+        { tokens.length > 0 &&
+          <span className='token'>
+            Detected language: {tokens[0]?.detected_language}
+          </span>
+        }
+      </div>
     
       <div>
-        {tokens.map((token, idx) => (
+        {/* {tokens.map((token, idx) => (
           <span key={idx} className='token'>
-            {token}
+            {token?.word}
           </span>
-        ))}
+        ))} */}
       </div>
     </>
   )
