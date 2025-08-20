@@ -43,9 +43,9 @@ function handleClear() {
       <textarea
       value={input}
       onChange={(e) => setInput(e.target.value)}
-      placeholder="Paste Chinese Text Here"
+      placeholder="Paste Your Text Here"
       rows={8}
-      style={{ width: '100%' }}
+      className='text-area'
       />
       <button onClick={handleTokenize}>
         Tokenize

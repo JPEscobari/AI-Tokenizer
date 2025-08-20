@@ -5,6 +5,10 @@
   text-align: center;
 }
 
+.text-area {
+  width: 100%
+}
+
 .token {
   display: inline-block;
   margin: 2vmin 4px 4px 2vmin;
