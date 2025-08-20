@@ -22,8 +22,7 @@ function handleClear() {
       const data = await response.json()
       console.log('Full segmented array:', data.segmented);
       setTokens(data.segmented);
-
-      // Log each word in the console
+      
       console.log('These are your tokens:');
       data.segmented.forEach(obj => {
         if (obj.word) {
