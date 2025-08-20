@@ -7,11 +7,20 @@ function App() {
   const [input, setInput] = useState("")
   const [tokens, setTokens] = useState([])
   const [language, setLanguage] = useState('')
+  const [selectedToken, setSelectedToken] = useState(null)
 
 function handleClear() {
   setInput("")
   setTokens([])
   setLanguage('')
+}
+
+function handleTokenClick(token) {
+  setSelectedToken(token)
+}
+
+function handleCloseDetails() {
+  setSelectedToken(null)
 }
 
  async function handleTokenize() {
@@ -60,21 +69,44 @@ function handleClear() {
       onClick={handleClear}>
         Clear
       </button>
+
+      {/* Detected Language Banner */}
       <div>
         { tokens.length > 0 &&
-          <span className='token'>
+          <h4 className='banner'>
             Detected language: {language}
-          </span>
+          </h4>
         }
       </div>
     
+      {/* Tokenized Text */}
       <div>
         {tokens.map((token, idx) => (
-          <span key={idx} className='token'>
+          <span 
+          key={idx} 
+          className='token'
+          onClick={() => handleTokenClick(token)}
+          >
             {token?.word}
           </span>
         ))}
       </div>
+      
+      {/* Token Details Modal/Panel */}
+      {selectedToken && 
+        <div className='token-details-modal'>
+          <h3>Word Details:</h3>
+          <h4>{selectedToken.word}</h4>
+          <p><strong>Definition: </strong>{selectedToken.definition || 'N/A'}</p>
+          <p><strong>Pronunciation: </strong>{selectedToken.pronunciation || 'N/A'}</p>
+          <button 
+            onClick={handleCloseDetails}
+            className='buttons'
+          >
+            Close
+          </button>
+        </div>
+      }
     </>
   )
 }

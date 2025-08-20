@@ -20,4 +20,18 @@
   border: 1px solid #ccc;
   border-radius: 4px;
   background-color: #454444;
+  cursor: pointer;
+}
+
+.token-details-modal {
+  position: 'fixed';
+  top: '20%';
+  left: '50%';
+  transform: 'translate(-50%, 0)';
+  background: '#fff';
+  border: '1px solid #ccc';
+  border-radius: '8px';
+  padding: '20px';
+  z-index: 1000;
+  min-width: '250px'
 }
