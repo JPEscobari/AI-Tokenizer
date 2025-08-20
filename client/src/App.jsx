@@ -11,6 +11,7 @@ function App() {
 function handleClear() {
   setInput("")
   setTokens([])
+  setLanguage('')
 }
 
  async function handleTokenize() {
