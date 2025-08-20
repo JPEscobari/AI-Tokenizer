@@ -40,7 +40,7 @@ const wordSchema = z.object({
 });
 
 // Define the response object output schema.
-const tokenizedOutput = z.object({
+const textDetails = z.object({
     detectedLanguage: z.string(),
     tokenizedText: z.array(wordSchema)
 })
@@ -64,12 +64,12 @@ app.post('/tokenize', async (req, res) => {
                     }
                 ],
                 text: {
-                    format: zodTextFormat(tokenizedOutput, "tokenized_output")
+                    format: zodTextFormat(textDetails, "text_details")
                 }
         });
-        const tokenized_output = response.output_parsed;
-        console.log('Tokenized output:', tokenized_output);
-        res.json({ tokenized_output: tokenized_output })
+        const text_details = response.output_parsed;
+        console.log('Tokenized output:', text_details);
+        res.json({ text_details: text_details })
     } catch (error){
         res.status(500).json({error: 'Failed to segment text', details: error.message})
     }

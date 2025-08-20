@@ -20,15 +20,19 @@ function handleClear() {
         body: JSON.stringify({ text: input }),
       })
       const data = await response.json()
-      console.log('Full segmented array:', data.segmented);
-      setTokens(data.segmented);
+      console.log('Full data:', data);
+      console.log('Detected Language:', data.text_details.detectedLanguage);
       
-      console.log('These are your tokens:');
-      data.segmented.forEach(obj => {
-        if (obj.word) {
-          console.log(obj.word);
+      setTokens(data.text_details.tokenizedText);
+      
+      // Log Tokenized Words:
+      console.log('These are your individual tokens:');
+      data.text_details.tokenizedText.forEach(token => {
+        if (token.word) {
+          console.log(token.word);
         }
       });
+
     } catch (error) {
       console.error('Error:', error)
     }
