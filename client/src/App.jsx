@@ -13,8 +13,6 @@ function handleClear() {
 }
 
  async function handleTokenize() {
-    // We will use the OpenAI API to tokenize the input text.
-    // Send a POST request to http://localhost:5656/tokenize
     try {
       const response = await fetch('http://localhost:5656/tokenize', {
         method: 'POST',
