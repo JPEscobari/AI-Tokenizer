@@ -6,6 +6,7 @@ import './App.css'
 function App() {
   const [input, setInput] = useState("")
   const [tokens, setTokens] = useState([])
+  const [language, setLanguage] = useState('')
 
 function handleClear() {
   setInput("")
@@ -23,8 +24,6 @@ function handleClear() {
       console.log('Full data:', text_details);
       console.log('Detected Language:', text_details.detectedLanguage);
       
-      setTokens(text_details.tokenizedText);
-      
       // Log Tokenized Words:
       console.log('These are your individual tokens:');
       text_details.tokenizedText.forEach(token => {
@@ -32,6 +31,9 @@ function handleClear() {
           console.log(token.word);
         }
       });
+
+      setTokens(text_details.tokenizedText);
+      setLanguage(text_details.detectedLanguage)
 
     } catch (error) {
       console.error('Error:', error)
@@ -60,17 +62,17 @@ function handleClear() {
       <div>
         { tokens.length > 0 &&
           <span className='token'>
-            Detected language: {tokens[0]?.detected_language}
+            Detected language: {language}
           </span>
         }
       </div>
     
       <div>
-        {/* {tokens.map((token, idx) => (
+        {tokens.map((token, idx) => (
           <span key={idx} className='token'>
             {token?.word}
           </span>
-        ))} */}
+        ))}
       </div>
     </>
   )
