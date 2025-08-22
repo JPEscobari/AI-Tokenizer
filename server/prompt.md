@@ -15,7 +15,7 @@ Go word by word and respond ONLY with a JSON array of objects in the following s
   {
      word: "string",
      pronunciation: "string",
-     meaning: "string",
+     definition: "string",
   },
   // Rest of the words
   ...
