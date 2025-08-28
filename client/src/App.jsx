@@ -74,7 +74,7 @@ function handleCloseDetails() {
       <div>
         { tokens.length > 0 &&
           <h4 className='banner'>
-            Detected language: {language}
+            Detected language{language.length > 0 ? 's' : ''}: {language.map(lang => (`${lang}`))}
           </h4>
         }
       </div>
