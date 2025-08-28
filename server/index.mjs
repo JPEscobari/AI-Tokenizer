@@ -32,6 +32,10 @@ try {
 // Set up OpenAI client
 const openai = new OpenAI()
 
+// Define the detected language schema format as an array of strings.
+// This schema assumes that the most used language will be the first one in the list.
+const languageSchema = z.array(z.string());
+
 // Define the word output schema format.
 const wordSchema = z.object({
     word: z.string(),
@@ -41,7 +45,7 @@ const wordSchema = z.object({
 
 // Define the response object output schema.
 const textDetails = z.object({
-    detectedLanguage: z.string(),
+    detectedLanguage: z.array(languageSchema),
     tokenizedText: z.array(wordSchema)
 })
 
@@ -75,7 +79,6 @@ app.post('/tokenize', async (req, res) => {
     }
 });
     
-
 const PORT = process.env.PORT || 5656;
 app.listen(PORT, () => {
     console.log(`Server listening on port ${PORT}`)
