@@ -9,7 +9,9 @@ The current `prompt.md` file is structured, but has a few weak points where ambi
 
 In `prompt.md` the `detected_language` is inside the array along with the words, but in the schema `detected_language` is a separate field from the array of words. This mismatch could be causing confusion to the model.
 
-> **Changes Made:** Make it explicit in the prompt that "detected_language" should be returned once at the top level (not inside the array), to align with `z.object`.
+> **Changes Made:** 
+> - Make it explicit in the prompt that "detected_language" should be returned once at the top level (not inside the array), to align with `z.object`.
+> - Updated the `textDetails` Schema to make `detectedLanguages` a list of detected languages.
 
 ### 2. **Special Characters & Emojis 🚩**
 
