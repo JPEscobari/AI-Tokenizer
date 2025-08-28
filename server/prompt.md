@@ -10,16 +10,18 @@ You will receive a text that is written in 1 or more non-English languages. Firs
 Go word by word and respond ONLY with a JSON array of objects in the following structure: 
 
 ```
-[
-  {detected_language: "string"},
-  {
-     word: "string",
-     pronunciation: "string",
-     definition: "string",
-  },
+{
+  "detected_language": [],
+  "tokenized_text": [
+    {
+      word: "string",
+      pronunciation: "string",
+      definition: "string",
+    }
+  ],
   // Rest of the words
   ...
-]
+}
 ```
 
 # 4. Ambiguity:
