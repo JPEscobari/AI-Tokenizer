@@ -1,13 +1,27 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import { sendRequest } from './utils/sendRequest'
 
 function App() {
   const [input, setInput] = useState("")
   const [tokens, setTokens] = useState([])
   const [language, setLanguage] = useState('')
   const [selectedToken, setSelectedToken] = useState(null)
+  const [history, setHistory] = useState([]);
+
+  useEffect(() => {
+    async function fetchHistory() {
+      try {
+        const data = await sendRequest('http://localhost:5656/api/history')
+        setHistory(data)
+      } catch (error) {
+        console.error('Failed to fetch history:', error)
+      }
+    }
+    fetchHistory();
+  }, []);
 
 function handleClear() {
   setInput("")
@@ -55,7 +69,14 @@ function handleCloseDetails() {
       <div className='main-container'>
         <section className="history">
           <h2>History</h2>
-          <p>Coming Soon...</p>
+          <ul>
+            {history.map((entry, idx) => (
+              <li key={idx}>
+                <strong>Input:</strong> {entry.input} <br />
+                <strong>Output:</strong> {JSON.stringify(entry.output)}
+              </li>
+            ))}
+          </ul>
         </section>
         <section className='tokenizer-app'>
             <textarea
