@@ -1,0 +1,29 @@
+.history {
+  padding: 2vmin;
+  overflow-y: auto;
+  max-height: 50vh;
+}
+
+.history-entry {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f90e;
+}
+
+.tokenized-text {
+  margin-top: 10px;
+}
+
+.token {
+  margin-bottom: 5px;
+}
+
+.timestamp {
+  display: block;
+  margin-top: 10px;
+  font-size: 0.8em;
+  color: #666;
+}

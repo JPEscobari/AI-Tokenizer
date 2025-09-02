@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import './App.css';
 import { sendRequest } from './utils/sendRequest';
-import History from './components/History'; // Import the History component
+import History from '../src/components/History/History';
 
 function App() {
   const [input, setInput] = useState("");
@@ -69,7 +69,7 @@ function App() {
   return (
     <>
       <div className='main-container'>
-        <History history={history} /> {/* Use the History component */}
+        <History history={history} />
         <section className='tokenizer-app'>
           <textarea
             value={input}
