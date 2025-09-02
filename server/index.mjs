@@ -5,12 +5,12 @@ import dotenv from 'dotenv';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { textDetails } from './models/TextDetailsSchema.mjs';
 dotenv.config();
 
 // Import OpenAI libraries for Structured Response
 import OpenAI from "openai";
 import { zodTextFormat } from "openai/helpers/zod";
-import { z } from "zod";
 
 const app = express();
 app.use(cors());
@@ -31,23 +31,6 @@ try {
 
 // Set up OpenAI client
 const openai = new OpenAI()
-
-// Define the detected language schema format as an array of strings.
-// This schema assumes that the most used language will be the first one in the list.
-const languageSchema = z.array(z.string());
-
-// Define the word output schema format.
-const wordSchema = z.object({
-    word: z.string(),
-    pronunciation: z.string(),
-    definition: z.string(),
-});
-
-// Define the response object output schema.
-const textDetails = z.object({
-    detectedLanguage: z.array(languageSchema),
-    tokenizedText: z.array(wordSchema)
-})
 
 app.post('/tokenize', async (req, res) => {
     const { text } = req.body;
