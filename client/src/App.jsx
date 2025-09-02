@@ -54,61 +54,69 @@ function handleCloseDetails() {
 
   return (
     <>
-      <textarea
-      value={input}
-      onChange={(e) => setInput(e.target.value)}
-      placeholder="Paste Your Text Here"
-      rows={8}
-      className='text-area'
-      />
-      <button 
-      className='buttons'
-      onClick={handleTokenize}>
-        Tokenize
-      </button>
-      <button 
-      className='buttons'
-      onClick={handleClear}>
-        Clear
-      </button>
-
-      {/* Detected Language Banner */}
-      <div>
-        { tokens.length > 0 &&
-          <h4 className='banner'>
-            Detected language{language.length > 0 ? 's' : ''}: {language.map(lang => (`${lang}`))}
-          </h4>
-        }
-      </div>
-    
-      {/* Tokenized Text */}
-      <div>
-        {tokens.map((token, idx) => (
-          <span 
-          key={idx} 
-          className='token'
-          onClick={() => handleTokenClick(token)}
-          >
-            {token?.word}
-          </span>
-        ))}
-      </div>
-      
-      {/* Token Details Modal/Panel */}
-      {selectedToken && 
-        <div className='token-details-modal'>
-          <h3>Word Details:</h3>
-          <h4>{selectedToken.word}</h4>
-          <p><strong>Definition: </strong>{selectedToken.definition || 'N/A'}</p>
-          <p><strong>Pronunciation: </strong>{selectedToken.pronunciation || 'N/A'}</p>
-          <button 
-            onClick={handleCloseDetails}
+      <div className='main-container'>
+        <section className="history">
+          <h2>History</h2>
+          <p>Coming Soon...</p>
+        </section>
+        <section className='tokenizer-app'>
+            <textarea
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
+            placeholder="Paste Your Text Here"
+            rows={8}
+            className='text-area'
+            />
+            <button 
             className='buttons'
-          >
-            Close
-          </button>
-        </div>
-      }
+            onClick={handleTokenize}>
+              Tokenize
+            </button>
+            <button 
+            className='buttons'
+            onClick={handleClear}>
+              Clear
+            </button>
+
+            {/* Detected Language Banner */}
+            <div>
+              { tokens.length > 0 &&
+                <h4 className='banner'>
+                  Detected language{language.length > 0 ? 's' : ''}: {language.map(lang => (`${lang}`))}
+                </h4>
+              }
+            </div>
+          
+            {/* Tokenized Text */}
+            <div>
+              {tokens.map((token, idx) => (
+                <span 
+                key={idx} 
+                className='token'
+                onClick={() => handleTokenClick(token)}
+                >
+                  {token?.word}
+                </span>
+              ))}
+            </div>
+            
+            {/* Token Details Modal/Panel */}
+            {selectedToken && 
+              <div className='token-details-modal'>
+                <h3>Word Details:</h3>
+                <h4>{selectedToken.word}</h4>
+                <p><strong>Definition: </strong>{selectedToken.definition || 'N/A'}</p>
+                <p><strong>Pronunciation: </strong>{selectedToken.pronunciation || 'N/A'}</p>
+                <button 
+                  onClick={handleCloseDetails}
+                  className='buttons'
+                >
+                  Close
+                </button>
+              </div>
+            }
+        </section>
+      </div>
     </>
   )
 }

@@ -5,6 +5,24 @@
   text-align: center;
 }
 
+.main-container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  width: 100vh;
+}
+
+.history{
+  overflow-y: scroll;
+  height: 50vh;
+  padding:  2vmin;
+  justify-content: center;
+}
+
+.tokenizer-app {
+  padding: 2vmin;
+  justify-content: center;
+}
+
 .text-area {
   width: 100%
 }
