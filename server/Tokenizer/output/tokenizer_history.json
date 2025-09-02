@@ -197,5 +197,76 @@
       ]
     },
     "timestamp": "2025-09-02T11:27:23.172Z"
+  },
+  {
+    "input": "New test with modifications",
+    "output": {
+      "detectedLanguage": [
+        [
+          "English"
+        ]
+      ],
+      "tokenizedText": [
+        {
+          "word": "New",
+          "pronunciation": "njuː",
+          "definition": "recently created or introduced"
+        },
+        {
+          "word": "test",
+          "pronunciation": "tɛst",
+          "definition": "a procedure intended to establish the quality, performance, or reliability of something"
+        },
+        {
+          "word": "with",
+          "pronunciation": "wɪð",
+          "definition": "accompanied by"
+        },
+        {
+          "word": "modifications",
+          "pronunciation": "ˌmɒdɪfɪˈkeɪʃənz",
+          "definition": "changes made to something"
+        }
+      ]
+    },
+    "timestamp": "2025-09-02T11:34:53.496Z"
+  },
+  {
+    "input": "This is a new test",
+    "output": {
+      "detectedLanguage": [
+        [
+          "English"
+        ]
+      ],
+      "tokenizedText": [
+        {
+          "word": "This",
+          "pronunciation": "ðɪs",
+          "definition": "used to identify a specific person or thing close at hand or being indicated or experienced"
+        },
+        {
+          "word": "is",
+          "pronunciation": "ɪz",
+          "definition": "third person singular present of be"
+        },
+        {
+          "word": "a",
+          "pronunciation": "ə",
+          "definition": "used when referring to someone or something for the first time in a text or conversation"
+        },
+        {
+          "word": "new",
+          "pronunciation": "njuː",
+          "definition": "not existing before; made, introduced, or discovered recently or now for the first time"
+        },
+        {
+          "word": "test",
+          "pronunciation": "tɛst",
+          "definition": "a procedure intended to establish the quality, performance, or reliability of something"
+        }
+      ]
+    },
+    "timestamp": "2025-09-02T11:53:41.576Z"
   }
 ]
