@@ -34,7 +34,7 @@ Return a **single JSON object** with the following structure:
 - If only one language is detected, return a single-item array.
 - If the text is split 50/50 between two or more languages, return all detected languages in order of detection, with the first listed being the one detected first.
 - If you're unsure how to parse a word, use the context on the text to make an informed decision.
-- If the text is made of only numbers, symbols, an unknown language, or is incompatible with the task, return:
+- If the text is made of an unknown language, or is incompatible with the task, return:
   ```
   {
   "detected_languages": ["Unable to determine"],

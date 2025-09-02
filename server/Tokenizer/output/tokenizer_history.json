@@ -1,237 +1,5 @@
 [
   {
-    "input": "Malas noticias gente",
-    "output": {
-      "detectedLanguage": [
-        [
-          "es"
-        ]
-      ],
-      "tokenizedText": [
-        {
-          "word": "Malas",
-          "pronunciation": "ˈmalas",
-          "definition": "bad (feminine plural form of 'malo')"
-        },
-        {
-          "word": "noticias",
-          "pronunciation": "noˈtisjas",
-          "definition": "news"
-        },
-        {
-          "word": "gente",
-          "pronunciation": "ˈxente",
-          "definition": "people"
-        }
-      ]
-    },
-    "timestamp": "2025-09-02T02:29:28.175Z"
-  },
-  {
-    "input": "Porque aqui es donde nacimos",
-    "output": {
-      "detectedLanguage": [
-        [
-          "es",
-          "100"
-        ]
-      ],
-      "tokenizedText": [
-        {
-          "word": "Porque",
-          "pronunciation": "por-ke",
-          "definition": "because"
-        },
-        {
-          "word": "aqui",
-          "pronunciation": "a-kee",
-          "definition": "here"
-        },
-        {
-          "word": "es",
-          "pronunciation": "es",
-          "definition": "is"
-        },
-        {
-          "word": "donde",
-          "pronunciation": "don-de",
-          "definition": "where"
-        },
-        {
-          "word": "nacimos",
-          "pronunciation": "na-thee-mos",
-          "definition": "we were born"
-        }
-      ]
-    },
-    "timestamp": "2025-09-02T02:29:45.091Z"
-  },
-  {
-    "input": "Nueva prueba",
-    "output": {
-      "detectedLanguage": [
-        [
-          "es"
-        ]
-      ],
-      "tokenizedText": [
-        {
-          "word": "Nueva",
-          "pronunciation": "ˈnwe.βa",
-          "definition": "new (feminine singular form of 'nuevo')"
-        },
-        {
-          "word": "prueba",
-          "pronunciation": "ˈpɾwe.βa",
-          "definition": "test; trial"
-        }
-      ]
-    },
-    "timestamp": "2025-09-02T02:31:44.283Z"
-  },
-  {
-    "input": "Prueba apgando Nodemon",
-    "output": {
-      "detectedLanguage": [
-        [
-          "Spanish"
-        ]
-      ],
-      "tokenizedText": [
-        {
-          "word": "Prueba",
-          "pronunciation": "ˈpɾwe.βa",
-          "definition": "test, trial"
-        },
-        {
-          "word": "apgando",
-          "pronunciation": "apˈɡan.do",
-          "definition": "(likely a misspelling of 'apagando') turning off"
-        },
-        {
-          "word": "Nodemon",
-          "pronunciation": "ˈnoʊ.də.mɒn",
-          "definition": "a tool that automatically restarts Node.js applications when file changes are detected"
-        }
-      ]
-    },
-    "timestamp": "2025-09-02T02:34:43.060Z"
-  },
-  {
-    "input": "The server has been turned off",
-    "output": {
-      "detectedLanguage": [
-        [
-          "English"
-        ]
-      ],
-      "tokenizedText": [
-        {
-          "word": "The",
-          "pronunciation": "ðə",
-          "definition": "used to refer to a specific item or items"
-        },
-        {
-          "word": "server",
-          "pronunciation": "ˈsɜːrvər",
-          "definition": "a computer or program that provides services to other computers"
-        },
-        {
-          "word": "has",
-          "pronunciation": "hæz",
-          "definition": "third person singular of 'have'; indicating possession or action"
-        },
-        {
-          "word": "been",
-          "pronunciation": "bɪn",
-          "definition": "past participle of 'be'"
-        },
-        {
-          "word": "turned",
-          "pronunciation": "tɜrnd",
-          "definition": "past tense of 'turn'; to switch or rotate"
-        },
-        {
-          "word": "off",
-          "pronunciation": "ɔf",
-          "definition": "not functioning or not in operation"
-        }
-      ]
-    },
-    "timestamp": "2025-09-02T02:36:50.699Z"
-  },
-  {
-    "input": "This is a new test",
-    "output": {
-      "detectedLanguage": [
-        [
-          "English"
-        ]
-      ],
-      "tokenizedText": [
-        {
-          "word": "This",
-          "pronunciation": "ðɪs",
-          "definition": "used to identify a specific person or thing close at hand or being indicated or experienced"
-        },
-        {
-          "word": "is",
-          "pronunciation": "ɪz",
-          "definition": "third person singular present of 'be'"
-        },
-        {
-          "word": "a",
-          "pronunciation": "ə",
-          "definition": "used when referring to someone or something for the first time in a text or conversation"
-        },
-        {
-          "word": "new",
-          "pronunciation": "nuː",
-          "definition": "not existing before; made, introduced, or discovered recently or now for the first time"
-        },
-        {
-          "word": "test",
-          "pronunciation": "tɛst",
-          "definition": "a procedure intended to establish the quality, performance, or reliability of something"
-        }
-      ]
-    },
-    "timestamp": "2025-09-02T11:27:23.172Z"
-  },
-  {
-    "input": "New test with modifications",
-    "output": {
-      "detectedLanguage": [
-        [
-          "English"
-        ]
-      ],
-      "tokenizedText": [
-        {
-          "word": "New",
-          "pronunciation": "njuː",
-          "definition": "recently created or introduced"
-        },
-        {
-          "word": "test",
-          "pronunciation": "tɛst",
-          "definition": "a procedure intended to establish the quality, performance, or reliability of something"
-        },
-        {
-          "word": "with",
-          "pronunciation": "wɪð",
-          "definition": "accompanied by"
-        },
-        {
-          "word": "modifications",
-          "pronunciation": "ˌmɒdɪfɪˈkeɪʃənz",
-          "definition": "changes made to something"
-        }
-      ]
-    },
-    "timestamp": "2025-09-02T11:34:53.496Z"
-  },
-  {
     "input": "This is a new test",
     "output": {
       "detectedLanguage": [
@@ -268,5 +36,718 @@
       ]
     },
     "timestamp": "2025-09-02T11:53:41.576Z"
+  },
+  {
+    "input": "中华人民共和国",
+    "output": {
+      "detectedLanguage": [
+        [
+          "zh",
+          "cmn"
+        ]
+      ],
+      "tokenizedText": [
+        {
+          "word": "中华人民共和国",
+          "pronunciation": "Zhōnghuá Rénmín Gònghéguó",
+          "definition": "People's Republic of China"
+        }
+      ]
+    },
+    "timestamp": "2025-09-02T13:52:13.566Z"
+  },
+  {
+    "input": "今天我去KFC吃饭 🍗",
+    "output": {
+      "detectedLanguage": [
+        [
+          "Chinese",
+          "100"
+        ]
+      ],
+      "tokenizedText": [
+        {
+          "word": "今天",
+          "pronunciation": "jīn tiān",
+          "definition": "today"
+        },
+        {
+          "word": "我",
+          "pronunciation": "wǒ",
+          "definition": "I; me"
+        },
+        {
+          "word": "去",
+          "pronunciation": "qù",
+          "definition": "to go"
+        },
+        {
+          "word": "KFC",
+          "pronunciation": "K-F-C",
+          "definition": "acronym"
+        },
+        {
+          "word": "吃饭",
+          "pronunciation": "chī fàn",
+          "definition": "to eat a meal"
+        },
+        {
+          "word": "🍗",
+          "pronunciation": "",
+          "definition": ""
+        }
+      ]
+    },
+    "timestamp": "2025-09-02T13:55:39.505Z"
+  },
+  {
+    "input": "我有三百二十一个苹果",
+    "output": {
+      "detectedLanguage": [
+        [
+          "Chinese"
+        ]
+      ],
+      "tokenizedText": [
+        {
+          "word": "我",
+          "pronunciation": "wǒ",
+          "definition": "I; me"
+        },
+        {
+          "word": "有",
+          "pronunciation": "yǒu",
+          "definition": "to have"
+        },
+        {
+          "word": "三百二十一个",
+          "pronunciation": "sān bǎi èr shí yī gè",
+          "definition": "321 (three hundred twenty-one)"
+        },
+        {
+          "word": "苹果",
+          "pronunciation": "píng guǒ",
+          "definition": "apple"
+        }
+      ]
+    },
+    "timestamp": "2025-09-02T13:56:24.095Z"
+  },
+  {
+    "input": "del",
+    "output": {
+      "detectedLanguage": [
+        [
+          "Spanish",
+          "100% confidence"
+        ]
+      ],
+      "tokenizedText": [
+        {
+          "word": "del",
+          "pronunciation": "del",
+          "definition": "of the (contraction of 'de' + 'el')"
+        }
+      ]
+    },
+    "timestamp": "2025-09-02T13:57:57.124Z"
+  },
+  {
+    "input": "dámelo",
+    "output": {
+      "detectedLanguage": [
+        [
+          "Spanish"
+        ]
+      ],
+      "tokenizedText": [
+        {
+          "word": "dámelo",
+          "pronunciation": "DAH-meh-lo",
+          "definition": "give it to me"
+        }
+      ]
+    },
+    "timestamp": "2025-09-02T13:58:22.801Z"
+  },
+  {
+    "input": "camión",
+    "output": {
+      "detectedLanguage": [
+        [
+          "es"
+        ]
+      ],
+      "tokenizedText": [
+        {
+          "word": "camión",
+          "pronunciation": "ka-ˈmyon",
+          "definition": "truck; a large motor vehicle used for transporting goods"
+        }
+      ]
+    },
+    "timestamp": "2025-09-02T13:59:52.152Z"
+  },
+  {
+    "input": "Voy a hacer jogging después de la cena",
+    "output": {
+      "detectedLanguage": [
+        [
+          "Spanish"
+        ]
+      ],
+      "tokenizedText": [
+        {
+          "word": "Voy",
+          "pronunciation": "boy",
+          "definition": "I go / I am going"
+        },
+        {
+          "word": "a",
+          "pronunciation": "a",
+          "definition": "to"
+        },
+        {
+          "word": "hacer",
+          "pronunciation": "a-ser",
+          "definition": "to do / to make"
+        },
+        {
+          "word": "jogging",
+          "pronunciation": "yo-gin",
+          "definition": "jogging (running at a steady pace for exercise)"
+        },
+        {
+          "word": "después",
+          "pronunciation": "des-pwes",
+          "definition": "after"
+        },
+        {
+          "word": "de",
+          "pronunciation": "de",
+          "definition": "of / from"
+        },
+        {
+          "word": "la",
+          "pronunciation": "la",
+          "definition": "the (feminine)"
+        },
+        {
+          "word": "cena",
+          "pronunciation": "se-na",
+          "definition": "dinner"
+        }
+      ]
+    },
+    "timestamp": "2025-09-02T14:01:10.556Z"
+  },
+  {
+    "input": "Voy a hacer jogging después de la cena. How 'bout you?",
+    "output": {
+      "detectedLanguage": [
+        [
+          "es",
+          "en"
+        ]
+      ],
+      "tokenizedText": [
+        {
+          "word": "Voy",
+          "pronunciation": "boi",
+          "definition": "I go"
+        },
+        {
+          "word": "a",
+          "pronunciation": "a",
+          "definition": "to"
+        },
+        {
+          "word": "hacer",
+          "pronunciation": "a-ther",
+          "definition": "to do / to make"
+        },
+        {
+          "word": "jogging",
+          "pronunciation": "yo-gin",
+          "definition": "jogging (anglicism used in Spanish for running for exercise)"
+        },
+        {
+          "word": "después",
+          "pronunciation": "des-pwes",
+          "definition": "after"
+        },
+        {
+          "word": "de",
+          "pronunciation": "de",
+          "definition": "of / from"
+        },
+        {
+          "word": "la",
+          "pronunciation": "la",
+          "definition": "the (feminine singular)"
+        },
+        {
+          "word": "cena",
+          "pronunciation": "se-na",
+          "definition": "dinner"
+        },
+        {
+          "word": ".",
+          "pronunciation": "",
+          "definition": ""
+        },
+        {
+          "word": "How",
+          "pronunciation": "hau",
+          "definition": "how"
+        },
+        {
+          "word": "'bout",
+          "pronunciation": "baut",
+          "definition": "about (informal contraction)"
+        },
+        {
+          "word": "you",
+          "pronunciation": "yu",
+          "definition": "you"
+        },
+        {
+          "word": "?",
+          "pronunciation": "",
+          "definition": ""
+        }
+      ]
+    },
+    "timestamp": "2025-09-02T14:01:56.834Z"
+  },
+  {
+    "input": "我喜欢 paella y churros",
+    "output": {
+      "detectedLanguage": [
+        [
+          "Chinese",
+          "Spanish"
+        ]
+      ],
+      "tokenizedText": [
+        {
+          "word": "我",
+          "pronunciation": "wǒ",
+          "definition": "I; me"
+        },
+        {
+          "word": "喜欢",
+          "pronunciation": "xǐ huān",
+          "definition": "to like; to be fond of"
+        },
+        {
+          "word": "paella",
+          "pronunciation": "pa-el-ya",
+          "definition": "a Spanish rice dish with seafood or meat"
+        },
+        {
+          "word": "y",
+          "pronunciation": "ee",
+          "definition": "and (in Spanish)"
+        },
+        {
+          "word": "churros",
+          "pronunciation": "choo-ros",
+          "definition": "a type of fried-dough pastry typical in Spain"
+        }
+      ]
+    },
+    "timestamp": "2025-09-02T14:22:54.689Z"
+  },
+  {
+    "input": "😂👍🔥",
+    "output": {
+      "detectedLanguage": [
+        [
+          "Unable to determine"
+        ]
+      ],
+      "tokenizedText": [
+        {
+          "word": "😂",
+          "pronunciation": "",
+          "definition": ""
+        },
+        {
+          "word": "👍",
+          "pronunciation": "",
+          "definition": ""
+        },
+        {
+          "word": "🔥",
+          "pronunciation": "",
+          "definition": ""
+        }
+      ]
+    },
+    "timestamp": "2025-09-02T14:24:35.600Z"
+  },
+  {
+    "input": "¿Qué???!!!",
+    "output": {
+      "detectedLanguage": [
+        [
+          "es",
+          "100"
+        ]
+      ],
+      "tokenizedText": [
+        {
+          "word": "¿",
+          "pronunciation": "",
+          "definition": ""
+        },
+        {
+          "word": "Qué",
+          "pronunciation": "ke",
+          "definition": "What"
+        },
+        {
+          "word": "?",
+          "pronunciation": "",
+          "definition": ""
+        },
+        {
+          "word": "?",
+          "pronunciation": "",
+          "definition": ""
+        },
+        {
+          "word": "?",
+          "pronunciation": "",
+          "definition": ""
+        },
+        {
+          "word": "!",
+          "pronunciation": "",
+          "definition": ""
+        },
+        {
+          "word": "!",
+          "pronunciation": "",
+          "definition": ""
+        },
+        {
+          "word": "!",
+          "pronunciation": "",
+          "definition": ""
+        }
+      ]
+    },
+    "timestamp": "2025-09-02T14:25:55.608Z"
+  },
+  {
+    "input": "123 $$$ ###",
+    "output": {
+      "detectedLanguage": [
+        [
+          "Unable to determine"
+        ]
+      ],
+      "tokenizedText": []
+    },
+    "timestamp": "2025-09-02T14:26:53.255Z"
+  },
+  {
+    "input": "123 $$$ ###",
+    "output": {
+      "detectedLanguage": [
+        [
+          "Unable to determine"
+        ]
+      ],
+      "tokenizedText": []
+    },
+    "timestamp": "2025-09-02T14:27:08.758Z"
+  },
+  {
+    "input": "123 $$$ ###",
+    "output": {
+      "detectedLanguage": [
+        [
+          "Unable to determine"
+        ]
+      ],
+      "tokenizedText": []
+    },
+    "timestamp": "2025-09-02T14:28:01.956Z"
+  },
+  {
+    "input": "123",
+    "output": {
+      "detectedLanguage": [
+        [
+          "Unable to determine"
+        ]
+      ],
+      "tokenizedText": []
+    },
+    "timestamp": "2025-09-02T14:29:02.633Z"
+  },
+  {
+    "input": "123",
+    "output": {
+      "detectedLanguage": [
+        [
+          "en"
+        ]
+      ],
+      "tokenizedText": [
+        {
+          "word": "123",
+          "pronunciation": "one hundred twenty-three",
+          "definition": "a number equal to one hundred twenty-three"
+        }
+      ]
+    },
+    "timestamp": "2025-09-02T14:32:34.669Z"
+  },
+  {
+    "input": "123 $$$ ###",
+    "output": {
+      "detectedLanguage": [
+        [
+          "en"
+        ]
+      ],
+      "tokenizedText": [
+        {
+          "word": "123",
+          "pronunciation": "one hundred twenty-three",
+          "definition": "123"
+        },
+        {
+          "word": "$",
+          "pronunciation": "",
+          "definition": ""
+        },
+        {
+          "word": "$",
+          "pronunciation": "",
+          "definition": ""
+        },
+        {
+          "word": "$",
+          "pronunciation": "",
+          "definition": ""
+        },
+        {
+          "word": "#",
+          "pronunciation": "",
+          "definition": ""
+        },
+        {
+          "word": "#",
+          "pronunciation": "",
+          "definition": ""
+        },
+        {
+          "word": "#",
+          "pronunciation": "",
+          "definition": ""
+        }
+      ]
+    },
+    "timestamp": "2025-09-02T14:32:56.519Z"
+  },
+  {
+    "input": "asdfgh qwerty zxcvb",
+    "output": {
+      "detectedLanguage": [
+        [
+          "English"
+        ]
+      ],
+      "tokenizedText": [
+        {
+          "word": "asdfgh",
+          "pronunciation": "as-de-f-ge-h",
+          "definition": "unknown"
+        },
+        {
+          "word": "qwerty",
+          "pronunciation": "kwer-tee",
+          "definition": "unknown"
+        },
+        {
+          "word": "zxcvb",
+          "pronunciation": "zee-ex-cee-vee-bee",
+          "definition": "unknown"
+        }
+      ]
+    },
+    "timestamp": "2025-09-02T14:34:09.313Z"
+  },
+  {
+    "input": "嘎啦嘟嘟哇咔叽叽噜",
+    "output": {
+      "detectedLanguage": [
+        [
+          "zh"
+        ]
+      ],
+      "tokenizedText": [
+        {
+          "word": "嘎啦",
+          "pronunciation": "gā lā",
+          "definition": "onomatopoeia, e.g., sound of something breaking"
+        },
+        {
+          "word": "嘟嘟",
+          "pronunciation": "dū dū",
+          "definition": "onomatopoeia, e.g., honking or tooting sound"
+        },
+        {
+          "word": "哇",
+          "pronunciation": "wā",
+          "definition": "interjection expressing surprise or exclamation"
+        },
+        {
+          "word": "咔",
+          "pronunciation": "kǎ",
+          "definition": "onomatopoeia, e.g., clicking or snapping sound"
+        },
+        {
+          "word": "叽叽",
+          "pronunciation": "jī jī",
+          "definition": "chirping or squeaky sound"
+        },
+        {
+          "word": "噜",
+          "pronunciation": "lū",
+          "definition": "onomatopoeia, e.g., a murmuring or rumbling sound"
+        }
+      ]
+    },
+    "timestamp": "2025-09-02T14:36:02.277Z"
+  },
+  {
+    "input": "画蛇添足",
+    "output": {
+      "detectedLanguage": [
+        [
+          "zh",
+          "100"
+        ]
+      ],
+      "tokenizedText": [
+        {
+          "word": "画蛇添足",
+          "pronunciation": "huà shé tiān zú",
+          "definition": "to ruin something by adding unnecessary details; literally 'draw legs on a snake' (Chinese idiom)"
+        }
+      ]
+    },
+    "timestamp": "2025-09-02T14:37:58.116Z"
+  },
+  {
+    "input": "Sr. Gómez",
+    "output": {
+      "detectedLanguage": [
+        [
+          "es",
+          "100"
+        ]
+      ],
+      "tokenizedText": [
+        {
+          "word": "Sr.",
+          "pronunciation": "señor",
+          "definition": "Mr. (a title for a man)"
+        },
+        {
+          "word": "Gómez",
+          "pronunciation": "GO-mes",
+          "definition": "a common Spanish surname"
+        }
+      ]
+    },
+    "timestamp": "2025-09-02T14:38:21.459Z"
+  },
+  {
+    "input": "Tengo 25 años",
+    "output": {
+      "detectedLanguage": [
+        [
+          "Spanish",
+          "100"
+        ]
+      ],
+      "tokenizedText": [
+        {
+          "word": "Tengo",
+          "pronunciation": "TEHN-goh",
+          "definition": "I have"
+        },
+        {
+          "word": "25",
+          "pronunciation": "veinticinco",
+          "definition": "twenty-five"
+        },
+        {
+          "word": "años",
+          "pronunciation": "AH-nyohs",
+          "definition": "years"
+        }
+      ]
+    },
+    "timestamp": "2025-09-02T14:41:28.348Z"
+  },
+  {
+    "input": "Estoy feliz 😊",
+    "output": {
+      "detectedLanguage": [
+        [
+          "Spanish"
+        ]
+      ],
+      "tokenizedText": [
+        {
+          "word": "Estoy",
+          "pronunciation": "ehs-TOY",
+          "definition": "I am"
+        },
+        {
+          "word": "feliz",
+          "pronunciation": "feh-LEES",
+          "definition": "happy"
+        },
+        {
+          "word": "😊",
+          "pronunciation": "",
+          "definition": ""
+        }
+      ]
+    },
+    "timestamp": "2025-09-02T14:42:28.384Z"
+  },
+  {
+    "input": "Hola 世界",
+    "output": {
+      "detectedLanguage": [
+        [
+          "Spanish",
+          "Chinese"
+        ]
+      ],
+      "tokenizedText": [
+        {
+          "word": "Hola",
+          "pronunciation": "o-la",
+          "definition": "hello"
+        },
+        {
+          "word": "世界",
+          "pronunciation": "shì jiè",
+          "definition": "world"
+        }
+      ]
+    },
+    "timestamp": "2025-09-02T14:42:45.315Z"
   }
 ]
