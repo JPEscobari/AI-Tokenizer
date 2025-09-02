@@ -78,19 +78,25 @@ app.post('/tokenize', async (req, res) => {
         const outputDir = path.join(__dirname, 'Tokenizer/output');
         const outputFile = path.join(outputDir, 'tokenizer_history.json');
 
+        // Verify the output directory exists
+        if (!fs.existsSync(outputDir)) {
+            fs.mkdirSync(outputDir, { recursive: true });
+        }
+
         // Read the existing history
         let history = [];
         const fileData = fs.readFileSync(outputFile, 'utf8');
         history = JSON.parse(fileData);
+              
 
-        // Append new entry to the history w/Timestamp
+        // Append new entry to the history with timestamp
         history.push({
             input: text,
             output: text_details,
             timestamp: new Date().toISOString()
         });
 
-        // Write the updated history back to the JSON file.
+        // Write the updated history back to the JSON file
         fs.writeFileSync(outputFile, JSON.stringify(history, null, 2));
 
         // Send the tokenized output back to the frontend.

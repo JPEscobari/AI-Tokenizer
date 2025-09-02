@@ -30,7 +30,9 @@ function handleCloseDetails() {
         headers: {'Content-Type': 'application/json',},
         body: JSON.stringify({ text: input }),
       })
-      const { text_details } = await response.json()
+      const data = await response.json()
+      console.log('Server Response:', data);
+      const { text_details } = data;
       console.log('Full data:', text_details);
       console.log('Detected Language:', text_details.detectedLanguage);
       

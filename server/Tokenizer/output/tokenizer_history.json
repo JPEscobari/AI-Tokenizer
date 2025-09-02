@@ -1,0 +1,163 @@
+[
+  {
+    "input": "Malas noticias gente",
+    "output": {
+      "detectedLanguage": [
+        [
+          "es"
+        ]
+      ],
+      "tokenizedText": [
+        {
+          "word": "Malas",
+          "pronunciation": "ˈmalas",
+          "definition": "bad (feminine plural form of 'malo')"
+        },
+        {
+          "word": "noticias",
+          "pronunciation": "noˈtisjas",
+          "definition": "news"
+        },
+        {
+          "word": "gente",
+          "pronunciation": "ˈxente",
+          "definition": "people"
+        }
+      ]
+    },
+    "timestamp": "2025-09-02T02:29:28.175Z"
+  },
+  {
+    "input": "Porque aqui es donde nacimos",
+    "output": {
+      "detectedLanguage": [
+        [
+          "es",
+          "100"
+        ]
+      ],
+      "tokenizedText": [
+        {
+          "word": "Porque",
+          "pronunciation": "por-ke",
+          "definition": "because"
+        },
+        {
+          "word": "aqui",
+          "pronunciation": "a-kee",
+          "definition": "here"
+        },
+        {
+          "word": "es",
+          "pronunciation": "es",
+          "definition": "is"
+        },
+        {
+          "word": "donde",
+          "pronunciation": "don-de",
+          "definition": "where"
+        },
+        {
+          "word": "nacimos",
+          "pronunciation": "na-thee-mos",
+          "definition": "we were born"
+        }
+      ]
+    },
+    "timestamp": "2025-09-02T02:29:45.091Z"
+  },
+  {
+    "input": "Nueva prueba",
+    "output": {
+      "detectedLanguage": [
+        [
+          "es"
+        ]
+      ],
+      "tokenizedText": [
+        {
+          "word": "Nueva",
+          "pronunciation": "ˈnwe.βa",
+          "definition": "new (feminine singular form of 'nuevo')"
+        },
+        {
+          "word": "prueba",
+          "pronunciation": "ˈpɾwe.βa",
+          "definition": "test; trial"
+        }
+      ]
+    },
+    "timestamp": "2025-09-02T02:31:44.283Z"
+  },
+  {
+    "input": "Prueba apgando Nodemon",
+    "output": {
+      "detectedLanguage": [
+        [
+          "Spanish"
+        ]
+      ],
+      "tokenizedText": [
+        {
+          "word": "Prueba",
+          "pronunciation": "ˈpɾwe.βa",
+          "definition": "test, trial"
+        },
+        {
+          "word": "apgando",
+          "pronunciation": "apˈɡan.do",
+          "definition": "(likely a misspelling of 'apagando') turning off"
+        },
+        {
+          "word": "Nodemon",
+          "pronunciation": "ˈnoʊ.də.mɒn",
+          "definition": "a tool that automatically restarts Node.js applications when file changes are detected"
+        }
+      ]
+    },
+    "timestamp": "2025-09-02T02:34:43.060Z"
+  },
+  {
+    "input": "The server has been turned off",
+    "output": {
+      "detectedLanguage": [
+        [
+          "English"
+        ]
+      ],
+      "tokenizedText": [
+        {
+          "word": "The",
+          "pronunciation": "ðə",
+          "definition": "used to refer to a specific item or items"
+        },
+        {
+          "word": "server",
+          "pronunciation": "ˈsɜːrvər",
+          "definition": "a computer or program that provides services to other computers"
+        },
+        {
+          "word": "has",
+          "pronunciation": "hæz",
+          "definition": "third person singular of 'have'; indicating possession or action"
+        },
+        {
+          "word": "been",
+          "pronunciation": "bɪn",
+          "definition": "past participle of 'be'"
+        },
+        {
+          "word": "turned",
+          "pronunciation": "tɜrnd",
+          "definition": "past tense of 'turn'; to switch or rotate"
+        },
+        {
+          "word": "off",
+          "pronunciation": "ɔf",
+          "definition": "not functioning or not in operation"
+        }
+      ]
+    },
+    "timestamp": "2025-09-02T02:36:50.699Z"
+  }
+]
