@@ -35,8 +35,6 @@ function handleCloseDetails() {
       const { text_details } = data;
       console.log('Full data:', text_details);
       console.log('Detected Language:', text_details.detectedLanguage);
-      
-      // Log Tokenized Words:
       console.log('These are your individual tokens:');
       text_details.tokenizedText.forEach(token => {
         if (token.word) {
