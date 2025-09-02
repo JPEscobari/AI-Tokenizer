@@ -15,7 +15,7 @@ function History({ history }) {
           <div className="tokenized-text">
             {entry.output.tokenizedText.map((token, index) => (
               <div key={index} className="token">
-                <strong>{token.word}</strong>: {token.definition} <em>({token.pronunciation})</em>
+                <strong>{token.word}</strong>: {token.definition}
               </div>
             ))}
           </div>
