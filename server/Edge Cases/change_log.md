@@ -1,6 +1,20 @@
 The change log will document all modifications made to `prompt.md`
 
 # Change Log for `prompt.md`.
+*Date: 9/04/2025*
+
+### Error 100: Unable to determine language
+
+*Issue:* an error code **100** is being returned from the API when a language cannot be detected.
+
+> **Changes Made:** added the instruction *"do not return a code "100" in the detected language if unable to determine the language."* for numbers and gibberish.
+
+*Issue:* URLs are segmented into multiple parts inconsistently.
+
+> **Changes Made:** added instructions for handling URLS specifically.
+
+___
+
 *Date: 8/27/2025*
 
 The current `prompt.md` file is structured, but has a few weak points where ambiguity has caused errors in the past:

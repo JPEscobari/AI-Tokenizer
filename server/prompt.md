@@ -41,6 +41,7 @@ Return a **single JSON object** with the following structure:
   "tokenized_text": []
   }
   ```
+- Do not return a code "100" in the detected_languages property if unable to determine the language.
 
 # 5. Rules for Tokenization
 ### General Rules:
@@ -61,6 +62,7 @@ Return a **single JSON object** with the following structure:
 
 ### Numbers:
 - Always return numbers as one token (not split into individual digits).
+- Do not return a code "100" in the detected language if unable to determine the language.
 - Format example:
 ```
 {
@@ -83,7 +85,8 @@ Return a **single JSON object** with the following structure:
 
 ### Unknown Words (Gibberish):
 - Preserve the original spelling.
-- Return with phonetic guess if possible, otherwise empty:
+- Do not return a code "100" in the detected language if unable to determine the language.
+- Return with phonetic guess if possible, otherwise empty string:
 ```
 {
   "word": "asdfgh",
@@ -91,6 +94,15 @@ Return a **single JSON object** with the following structure:
   "definition": "unknown"
 }
 ```
+### URLs:
+- Treat URLs as a single token.
+- Return domain name as the word (i.e: google.com for https://www.google.com), with an empty string for pronunciation and "URL" as the definition.
+
+{
+  "word": "http://example.com",
+  "pronunciation": "",
+  "definition": "URL"
+}
 
 # 6. **Ambiguity Rules**
 - Use context from the text to make segmentation decisions.
